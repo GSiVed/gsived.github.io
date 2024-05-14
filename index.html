@@ -177,8 +177,8 @@ async function fetchJSON(url, options = {}) {
      (function (){
        var msalConfig = {
 	   auth: {
-	     clientId: '<CANVAS CLIENT APP ID>',
-	     authority: 'https://login.microsoftonline.com/<TENANT ID>'
+	     clientId: '1bd90ed0-fb6a-4fef-a7c2-1d5678f47484',
+	     authority: 'https://login.microsoftonline.com/2529db1f-d69c-47fa-8d9e-4ccff43c1d68'
 	   },
 	   cache: {
 	     cacheLocation: 'localStorage',
@@ -193,7 +193,7 @@ async function fetchJSON(url, options = {}) {
 (async function main() {
 
     // Add your BOT ID below 
-    var theURL = "<Token endpoint URL>" // you can find the token URL via the mobile app channel configuration
+    var theURL = "https://27ca45ee18444413bf0982deb72466.f5.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr2fb_copilotSsoTest/directline/token?api-version=2022-03-01-preview" // you can find the token URL via the mobile app channel configuration
 
 	var userId = clientApplication.account?.accountIdentifier != null ? 
 					("You-customized-prefix" + clientApplication.account.accountIdentifier).substr(0, 64) 
